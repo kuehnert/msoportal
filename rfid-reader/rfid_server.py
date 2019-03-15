@@ -11,7 +11,7 @@ url = 'https://my-json-server.typicode.com/kuehnert/msoportal/students/'
 try:
 	while True:
 		id = reader.read()
-		print("Found student id: " + id)
+		print(f"Found student id: {id}")
 		print("Fetching data...")
 		response = requests.get(url=url)
 		print("Parsing data...")
