@@ -15,3 +15,6 @@ Python 3.7 installieren:
 Benötigte Pip Module:
 * pip install spidev
 * pip install RPi.GPIO
+
+Aufruf mit:
+sudo /home/mk/.pyenv/versions/3.6.8/bin/python

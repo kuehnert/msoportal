@@ -11,7 +11,8 @@ url = 'https://my-json-server.typicode.com/kuehnert/msoportal/students'
 try:
     while True:
         print("\n\nWaiting for scan")
-        id = reader.read()
+        # Ignore additional data on tag
+        id, data = reader.read()
         print(f"Found student id: {id}")
         student_url = f"{url}/{id}"
         print(f"Fetching data from {student_url}...")
