@@ -9,17 +9,19 @@ reader = SimpleMFRC522.SimpleMFRC522()
 url = 'https://my-json-server.typicode.com/kuehnert/msoportal/students'
 
 try:
-	while True:
-		print("\n\nWaiting for scan")
-		id = reader.read()
-		print(f"Found student id: {id}")
-		print("Fetching data...")
-		response = requests.get(url=f"{url}/{id}")
-		print("Parsing data...")
-		data = response.json()
-		print("Found data...")
-		print(data)
-		# webbrowser.open_new_tab(f"{url}/{id}")
+    while True:
+        print("\n\nWaiting for scan")
+        id = reader.read()
+        print(f"Found student id: {id}")
+        student_url = f"{url}/{id}"
+        print(f"Fetching data from {student_url}...")
+        response = requests.get(url=student_url)
+        print(f"Received: {response}")
+        print("Parsing data...")
+        data = response.json()
+        print("Found data...")
+        print(data)
+        # webbrowser.open_new_tab(student_url)
 
 finally:
     GPIO.cleanup()
