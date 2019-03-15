@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "id": 109103557441,
+      "firstname": "Jens",
+      "lastname": "Müller",
+      "coverLessons": [
+        {
+          "id": 1,
+          "date": "2019-03-15",
+          "period": 2,
+          "teacher": "A. Kosler"
+        }
+      ],
+      "birthday": "2002-03-15",
+      "address": "Mauritiussteinweg 30, 50676 Köln"
+    },
+    {
+      "id": 933500375333,
+      "firstname": "Anna",
+      "lastname": "Schmidt",
+      "coverLessons": [
+        {
+          "id": 1,
+          "date": "2019-03-15",
+          "period": 1,
+          "teacher": "M. Kühnert"
+        }
+      ],
+      "birthday": "2002-03-15",
+      "address": "Am Bental 19, 51381 Leverkusen"
+    }
+  ]
+}
